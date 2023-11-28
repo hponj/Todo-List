@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 10px 10px 10px 20px;
+    background-color: #319CFF;
+}
+
+header h2{
+    color: white;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url(image/bg2.jpg);
+    background-size: cover;
+    
+    padding: 10px;
+
+}
+
+.container .Todo-app{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.container .Todo-app .row{
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 4px 7px 12.6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.container .Todo-app .row span{
+    padding-left: 10px;
+}
+
+input{
+    font-size: 1rem;
+    padding: 10px 10px 10px 10px;
+    margin: 0.5rem;
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+
+.input::placeholder{
+    color: #4f4f4f;
+}
+
+input::-webkit-datetime-edit{
+    color: #4f4f4f;
+}
+
+
+button{
+    background-color: #319CFF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 10px 10px 10px;
+    margin: 0.5rem;
+    border-radius: 15px;
+    
+}
+
+button:hover {
+    background-color: #0462ba;
+}
+/* list-palce */
+
+.list{
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 4px 7px 12.6px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.list div span{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+    color: #555;
+    Top: 12px;
+    cursor: pointer;
+}
+
+.list div span:hover{
+    background-color: #edeefe;
+}
+
+.list div{
+    padding: 0px 0px 0px 50px;
+    position: relative;
+    width: 100%;
+}
+
+.list div::before{
+    content: '';
+    background-image: url(image/Uncheck.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 3px;
+    bottom: 16px;
+    cursor: pointer;
+}
+
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.list div.checked::before{
+    background-image: url(image/check.png);
+}
+

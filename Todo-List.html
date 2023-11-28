@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo-List</title>
+    <link rel="stylesheet" href="Todo.css">
+</head>
+<body>
+    <header>
+        <h2>Todo-List</h2>
+    </header>
+    <div class="container">
+            <div class="Todo-app">
+                <div class="row">
+                    <span>Your Task:</span>
+                    <input type="text" placeholder="Put your task" id="text" >
+                    <span>Date:</span>
+                    <input type="date" placeholder="Date" class="input" id="date">
+                    <button onclick="add()">Submit</button>
+                </div>
+                <div id="list-place">
+
+                </div>
+            </div>
+    </div>
+
+    <script src="Todo.js"></script>
+</body>
+</html>
