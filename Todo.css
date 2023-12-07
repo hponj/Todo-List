@@ -26,7 +26,7 @@ header h2{
     justify-content: center;
     background-image: url(image/bg2.jpg);
     background-size: cover;
-    
+    background-repeat: repeat;
     padding: 10px;
 
 }
