@@ -24,7 +24,7 @@ header h2{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #fff;
+    background-color: white;
     background-size: cover;
     background-repeat: repeat;
     padding: 10px;
